@@ -37,3 +37,7 @@ function desencriptar(){
     textoEncriptado;
 
 }
+
+function copiar(){
+    var contenido = document.querySelector("#")
+}
