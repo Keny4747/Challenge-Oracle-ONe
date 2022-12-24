@@ -8,9 +8,12 @@ function encriptar(){
     //
 
     var textoEncriptado = frase.replace(/e/img, "enter");
-    var textoEncriptado = frase.replace(/0/img, "ober");
-    var textoEncriptado = frase.replace(/i/img, "imes");
-    var textoEncriptado = frase.replace(/a/img, "ai");
-    var textoEncriptado = frase.replace(/u/img, "ufat");
+    var textoEncriptado = textoEncriptado.replace(/0/img, "ober");
+    var textoEncriptado = textoEncriptado.replace(/i/img, "imes");
+    var textoEncriptado = textoEncriptado.replace(/a/img, "ai");
+    var textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
+
+    document.getElementById("textoDesencriptado").innerHTML = 
+    textoEncriptado;
 
 }
