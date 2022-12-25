@@ -1,3 +1,13 @@
 body{
     font-family: 'Play';
 }
+
+.logo{
+    width: 100px;
+}
+
+main{
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+}
