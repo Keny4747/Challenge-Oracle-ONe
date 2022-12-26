@@ -21,5 +21,13 @@ main{
 .msg-box{
     width: 20%;
     text-align: center;
-    margin: 20px 0 0 14%;
+    margin: 20px 0 0 10em;
+}
+.btn{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
 }
