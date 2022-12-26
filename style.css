@@ -38,3 +38,7 @@ main{
     cursor: pointer;
     outline: none;
 }
+.text-input{
+    background-color: #2cb67d;
+    color: white;
+}
