@@ -1,7 +1,17 @@
 body{
-    font-family: 'Play';
-}
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Play', sans-serif;
+    background: #94a1b2;
+    margin: 0;
 
+}
+nav{
+    text-align: center;
+    background-color: #fffffe;
+    
+}
 .logo{
     width: 100px;
 }
@@ -11,7 +21,17 @@ main{
     width: 100%;
     margin: 0 auto;
 }
-
+.text-input{
+    background-color: #2cb67d;
+    color: white;
+}
+.text-input-salida{
+    background-color: #7f5af0;
+    color: white;
+}
+#btn-encriptar{
+    background-color: #94a1b2;
+}
 .box-encriptado{
     width: 30%;
     text-align: center;
@@ -23,7 +43,14 @@ main{
     text-align: center;
     margin: 20px 0 0 10em;
 }
-.btn{
+textarea{
+    margin: 0 0 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.btn {
+    padding: 1em 3em;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -37,12 +64,8 @@ main{
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-}
-.text-input{
-    background-color: #2cb67d;
-    color: white;
-}
-.text-input-salida{
-    background-color: #7f5af0;
-    color: white;
-}
+  }
+  
+
+
+
