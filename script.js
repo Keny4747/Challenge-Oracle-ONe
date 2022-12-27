@@ -1,46 +1,41 @@
-function encriptar(){
-
-    var frase = document.getElementById("textoEncriptado").value.toLowerCase();   
-
-    //i = es para que tome letras mayusculas y minusculas
-    //g = es para que tome en cuenta toda la linea o la oración
-    //m = tome en cuenta multiples lineas 
-
-
-    var textoEncriptado = frase.replace(/e/img, "enter");
-    var textoEncriptado = textoEncriptado.replace(/o/img, "ober");
-    var textoEncriptado = textoEncriptado.replace(/i/img, "imes");
-    var textoEncriptado = textoEncriptado.replace(/a/img, "ai");
-    var textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
-
-    document.getElementById("textoDesencriptado").innerHTML = 
-    textoEncriptado;
-
-}
-
-function desencriptar(){
-
-    var frase = document.getElementById("textoEncriptado").value.toLowerCase();   
-
-    //i = es para que tome letras mayusculas y minusculas
-    //g = es para que tome en cuenta toda la linea o la oración
-    //m = tome en cuenta multiples lineas 
-
-
-    var textoEncriptado = frase.replace(/enter/img, "e");
-    var textoEncriptado = textoEncriptado.replace(/ober/img, "o");
-    var textoEncriptado = textoEncriptado.replace(/imes/img, "i");
-    var textoEncriptado = textoEncriptado.replace(/ai/img, "a");
-    var textoEncriptado = textoEncriptado.replace(/ufat/img, "u");
-
-    document.getElementById("textoDesencriptado").innerHTML = 
-    textoEncriptado;
-
-}
-
-function copiar(){
-    var contenido = document.querySelector("#textoDesencriptado");
-
-    contenido.Select();
-    document.execCommand("copy");
-}
+function encriptar() {
+    var texto = document.querySelector("#input-texto").value;
+    var textoCifrado = texto
+      .replace(/e/gi, "enter")
+      .replace(/i/gi, "imes")
+      .replace(/a/gi, "ai")
+      .replace(/o/gi, "ober")
+      .replace(/u/gi, "ufat");
+    document.querySelector(".text-input-salida").value = textoCifrado;
+    document.querySelector("#input-texto").value;
+  }
+  
+  var boton1 = document.querySelector("#btn-encriptar");
+  boton1.onclick = encriptar;
+  
+  function desencriptar() {
+    var texto = document.querySelector("#input-texto").value;
+    var textoCifrado = texto
+      .replace(/enter/gi, "e")
+      .replace(/imes/gi, "i")
+      .replace(/ai/gi, "a")
+      .replace(/ober/gi, "o")
+      .replace(/ufat/gi, "u");
+    document.querySelector(".text-input-salida").value = textoCifrado;
+    document.querySelector("#input-texto").value;
+  }
+  
+  var boton2 = document.querySelector("#btn-desencriptar");
+  boton2.onclick = desencriptar;
+  
+  function copytext() {
+  
+      var copyText = document.getElementById("msg");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      
+      }
+  
+  var boton3 = document.querySelector("#btn-copy");
+  boton3.onclick = copytext;
