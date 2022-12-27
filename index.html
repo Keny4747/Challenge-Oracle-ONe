@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Encriptador de Texto</title>
-</head>
-
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Encriptar Alura</title>
+  </head>
+  <body>
     <nav>
-        <img src="img/Frame 6.png" alt="logo alura" class="logo">
+      <img src="img/logo-removebg-preview.png" alt="" class="logo" />
     </nav>
-    
-        
-    
 
     <main class="main-box">
-
-        <div class="box-ecnriptado">
-            <h3>Ingresar el texto a Encriptar</h3>
-            <textarea 
+      <section class="box-ecriptado">
+          <h3>Ingrese su texto a Encriptar</h3>
+          <textarea
             class="text-input"
-            type="text" 
-            name="input-texto" 
-            placeholder="Escriba el texto a encriptar"
-            cols="50" 
-            rows="15">
-            </textarea>
+            type="text"
+            name="input-texto"
+            id="input-texto"
+            placeholder="Ingrese el texto aqui"
+            cols="50"
+            rows="15"
+          ></textarea>
+          <input
+            class="btn"
+            type="button"
+            value="Encriptar"
+            id="btn-encriptar"
+          />
+          <input
+            class="btn"
+            type="button"
+            value="Desencriptar"
+            id="btn-desencriptar"
+          />
+        
+      </section>
 
-            <button type="button" id="btn-encriptar" class="btn">Encriptar</button>
-            <button type="button" id="btn-dencriptar" class="btn">Desencriptar</button>
-
-        </div>
-
-
-
-        <div class="msg-box">
-            <h3>Texto Desencriptado</h3>
-            <textarea
-             name="text-input" 
-             class="text-input-salida"
-             id="" 
-             cols="30" 
-             rows="15" 
-             id="msg"></textarea>
-            <button type="button" id="btn-copy" class="btn">Copiar</button>
-
-        </div>
-
-
-
+      <section class="msg-box">
+        <h3> Texto Encriptado</h3>
+        <textarea
+          name="text-input"
+          class="text-input-salida"
+          id="msg"
+          cols="30"
+          rows="15"
+        ></textarea>
+        <input
+          class="btn"
+          onclick="copytext()"
+          type="button"
+          value="copiar"
+          id="btn-copy"
+        />
+      </section>
     </main>
-    <footer></footer>
-</body>
 
+    <footer>
+      <img class="footerlogo" src="img/logo-removebg-preview.png" alt=""><br>
+      <h3>Mis redes sociales</h3>
+        <a href="https://www.linkedin.com/in/carlos-jose-linares-rodriguez-650462b0/" target="_blank" class="redes"><img src="img/icons8-linkedin-circled-40.png" alt=""></a>
+        <a href="https://www.instagram.com/ikarlangaxz/" target="_blank" class="redes"><img src="img/icons8-instagram-40.png" alt=""></a>
+        <a href="https://github.com/KarlangaXZ" target="_blank" class="redes"><img src="img/icons8-github-40.png" alt=""></a>
+        <p>&#169;</p><br>
+      
+
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="copiar.js"></script>
+  </body>
 </html>
